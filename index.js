@@ -33,6 +33,11 @@ function handleNewItemSubmit(){
   // Responsible for adding a new item to the shopping list
   $('#js-shopping-list-form').submit(function(e) {
     e.preventDefault();
+    let listItem = $('#shopping-list-entry').val();
+    store.push(
+      {name: listItem, checked: false}
+    );
+    renderShoppingList()
   })
 }
 
