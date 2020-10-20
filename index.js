@@ -22,13 +22,11 @@ function main () {
     $('.shopping-list').on('click', '.shopping-item-toggle', function(event) {
         $(event.currentTarget).parent().parent().children('.shopping-item').toggleClass('shopping-item__checked');
 
-        // $(event.span).closest( ".button-label" ).toggleClass( ".shopping-item__checked" );
       });
 
       $('.shopping-list').on('click', '.shopping-item-delete', function(event) {
         $(event.currentTarget).parent().parent().remove();
 
-        // $(event.span).closest( ".button-label" ).toggleClass( ".shopping-item__checked" );
       });
 }
 
