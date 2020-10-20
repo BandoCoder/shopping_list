@@ -31,7 +31,9 @@ function renderShoppingList() {
 
 function handleNewItemSubmit(){
   // Responsible for adding a new item to the shopping list
-
+  $('#js-shopping-list-form').submit(function(e) {
+    e.preventDefault();
+  })
 }
 
 function handleItemCheckClicked() {
